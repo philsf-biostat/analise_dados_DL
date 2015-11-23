@@ -1,0 +1,200 @@
+detach(margarida)
+margarida<-read.csv("BANCO PÓS QUALIFICAÇÃO 06_10_15.csv", header = T)
+
+# Guardando apenas as variáveis que serão utilizadas
+margarida<-margarida[c("Ordem","Sexo","Medicamento","VITAMINA.D.BASAL","VITAMINA.D.FINAL","ADIPONECTINA.BASAL","ADIPONECTINA.FINAL","CTX.BASAL","CTX.FINAL","FAO.BASAL","FAO.FINAL","LEPTINA.BASAL","LEPTINA.FINAL","OPG.BASAL","OPG.FINAL","TNF.ALFA.BASAL","TNF.ALFA.FINAL","CALCIO.BASAL","CALCIO.FINAL")]
+# Retirando os pacientes do medicamento Protos
+margarida<-margarida[margarida$Medicamento!="Protos",]
+margarida<-droplevels(margarida)
+# # Corrigindo o paciente P24, outlier da adiponectina (0.7->0.17)
+# margarida[margarida$Ordem=="P24",]$ADIPONECTINA.BASAL<-0.17
+# Retirando o paciente P5, outlier do FAO basal
+margarida<-margarida[c(margarida$Ordem!="P5"),]
+
+str(margarida)
+
+attach(margarida)
+
+## Gráficos descriticos
+# Boxplots
+par(mfrow=c(1,1))
+boxplot(data.frame(Basal=VITAMINA.D.BASAL,Final=VITAMINA.D.FINAL),main="Vitamina D",ylab="ng/mL")
+
+par(mfrow=c(2,3))
+boxplot(data.frame(Basal=ADIPONECTINA.BASAL,Final=ADIPONECTINA.FINAL),main="Adiponectina",ylab="ng/ml")
+boxplot(data.frame(Basal=CTX.BASAL,Final=CTX.FINAL),main="CTX",ylab="ng/mL")
+boxplot(data.frame(Basal=FAO.BASAL,Final=FAO.FINAL),main="FAO",ylab="ug/L")
+boxplot(data.frame(Basal=LEPTINA.BASAL,Final=LEPTINA.FINAL),main="Leptina",ylab="pg/mL")
+boxplot(data.frame(Basal=OPG.BASAL,Final=OPG.FINAL),main="OPG",ylab="pg/mL")
+boxplot(data.frame(Basal=TNF.ALFA.BASAL,Final=TNF.ALFA.FINAL),main="TNF-a",ylab="pg/mL")
+#boxplot(data.frame(Basal=PTH.BASAL,Final=PTH.FINAL),main="PTH",ylab="")
+
+
+# library(Rlab)
+# bplot(data.frame(VITAMINA.D.BASAL,VITAMINA.D.FINAL),labels=c("Basal","Final"),main="Vitamina D")
+# bplot(data.frame(Basal=ADIPONECTINA.BASAL,Final=ADIPONECTINA.FINAL),main="Adiponectina")
+# bplot(data.frame(VITAMINA.D.BASAL,VITAMINA.D.FINAL),labels=c("Basal","Final"),main="Adiponectina")
+# bplot(data.frame(LEPTINA.BASAL,LEPTINA.FINAL),labels=c("Basal","Final"),main="Leptina")
+# bplot(data.frame(TNF.ALFA.BASAL,TNF.ALFA.FINAL),labels=c("Basal","Final"),main="TNF-a")
+# bplot(data.frame(OPG.BASAL,OPG.FINAL),labels=c("Basal","Final"),main="OPG")
+
+## Relacionando com medicamentos (??)
+par(mfrow=c(2,2))
+boxplot(VITAMINA.D.BASAL~Medicamento, main="Vitamina D Basal")
+boxplot(VITAMINA.D.FINAL~Medicamento, main="Vitamina D Final")
+boxplot(OPG.BASAL~Medicamento, main="OPG Basal")
+boxplot(OPG.FINAL~Medicamento, main="OPG Final")
+boxplot(ADIPONECTINA.BASAL~Medicamento, main="ADP Basal")
+boxplot(ADIPONECTINA.FINAL~Medicamento, main="ADP Final")
+boxplot(TNF.ALFA.BASAL~Medicamento, main="TNF-a Basal")
+boxplot(TNF.ALFA.FINAL~Medicamento, main="TNF-a Final")
+boxplot(LEPTINA.BASAL~Medicamento, main="LEP Basal")
+boxplot(LEPTINA.FINAL~Medicamento, main="LEP Final")
+boxplot(CTX.BASAL~Medicamento, main="CTX Basal")
+boxplot(CTX.FINAL~Medicamento, main="CTX FINAL")
+boxplot(FAO.BASAL~Medicamento, main="FAO Basal")
+boxplot(FAO.FINAL~Medicamento, main="FAO Final")
+
+## Diferenças por medicamento?
+t.test(margarida$VITAMINA.D.BASAL[Medicamento=="Aclasta"],margarida$VITAMINA.D.BASAL[Medicamento=="Fosamax"])
+wilcox.test(margarida$VITAMINA.D.BASAL[Medicamento=="Aclasta"],margarida$VITAMINA.D.BASAL[Medicamento=="Fosamax"])
+
+t.test(margarida$OPG.BASAL[Medicamento=="Aclasta"],margarida$OPG.BASAL[Medicamento=="Fosamax"])
+t.test(margarida$OPG.FINAL[Medicamento=="Aclasta"],margarida$OPG.FINAL[Medicamento=="Fosamax"])
+
+t.test(margarida$LEPTINA.BASAL[Medicamento=="Aclasta"],margarida$LEPTINA.BASAL[Medicamento=="Fosamax"])
+t.test(margarida$LEPTINA.FINAL[Medicamento=="Aclasta"],margarida$LEPTINA.FINAL[Medicamento=="Fosamax"])
+
+t.test(margarida$ADIPONECTINA.BASAL[Medicamento=="Aclasta"],margarida$ADIPONECTINA.BASAL[Medicamento=="Fosamax"])
+t.test(margarida$ADIPONECTINA.FINAL[Medicamento=="Aclasta"],margarida$ADIPONECTINA.FINAL[Medicamento=="Fosamax"])
+
+## Correlações entre valores basal e final
+cor(VITAMINA.D.BASAL,VITAMINA.D.FINAL) # Vitamina D
+
+cor(ADIPONECTINA.BASAL,ADIPONECTINA.FINAL) # ADIPONECTINA
+cor(CTX.BASAL,CTX.FINAL) # CTX
+cor(FAO.BASAL,FAO.FINAL) # FAO
+cor(LEPTINA.BASAL,LEPTINA.FINAL) # LEPTINA
+cor(OPG.BASAL,OPG.FINAL) # OSTEOPROTEGERINA
+cor(TNF.ALFA.BASAL,TNF.ALFA.FINAL) # TNF.a
+
+## Regressões: Final ~ Basal + Vitamina(??)
+# VITAMINA D
+fit.vit<-lm(VITAMINA.D.FINAL~VITAMINA.D.BASAL)
+summary(fit.vit)
+plot(VITAMINA.D.BASAL,VITAMINA.D.FINAL)
+abline(fit.vit)
+
+par(mfrow=c(2,3))
+
+# ADIPONECTINA
+fit.adp<-lm(ADIPONECTINA.FINAL~ADIPONECTINA.BASAL)
+summary(fit.adp)
+plot(ADIPONECTINA.BASAL,ADIPONECTINA.FINAL)
+abline(fit.adp)
+
+# CTX
+fit.ctx<-lm(CTX.FINAL~CTX.BASAL)
+summary(fit.ctx)
+plot(CTX.BASAL,CTX.FINAL)
+abline(fit.ctx)
+
+# FAO
+fit.fao<-lm(FAO.FINAL~FAO.BASAL)
+summary(fit.fao)
+plot(FAO.BASAL,FAO.FINAL)
+abline(fit.fao)
+
+#LEPTINA
+fit.lep<-lm(LEPTINA.FINAL~LEPTINA.BASAL)
+summary(fit.lep)
+plot(LEPTINA.BASAL,LEPTINA.FINAL)
+abline(fit.lep)
+
+# OSTEOPROTEGERINA
+fit.opg<-lm(OPG.FINAL~OPG.BASAL)
+summary(fit.opg)
+plot(OPG.BASAL,OPG.FINAL)
+abline(fit.opg)
+
+# TNF
+fit.tnf<-lm(TNF.ALFA.FINAL~TNF.ALFA.BASAL)
+summary(fit.tnf)
+plot(TNF.ALFA.BASAL,TNF.ALFA.FINAL)
+abline(fit.tnf)
+
+## Busca de regressão múltipla
+bigfit<-lm(CALCIO.FINAL ~ OPG.BASAL + OPG.FINAL + VITAMINA.D.FINAL + VITAMINA.D.BASAL + ADIPONECTINA.BASAL + ADIPONECTINA.FINAL + CTX.BASAL + CTX.FINAL + FAO.BASAL + FAO.FINAL + LEPTINA.BASAL + LEPTINA.FINAL + TNF.ALFA.BASAL + TNF.ALFA.FINAL)
+summary(bigfit)
+
+## Teste de Shapiro-Wilk
+shapiro.test(VITAMINA.D.BASAL)
+shapiro.test(VITAMINA.D.FINAL)
+
+shapiro.test(ADIPONECTINA.BASAL)
+shapiro.test(ADIPONECTINA.FINAL)
+
+shapiro.test(CTX.BASAL)
+shapiro.test(CTX.FINAL)
+
+shapiro.test(FAO.BASAL)
+shapiro.test(FAO.FINAL)
+
+shapiro.test(LEPTINA.BASAL)
+shapiro.test(LEPTINA.FINAL)
+
+shapiro.test(OPG.BASAL)
+shapiro.test(OPG.FINAL)
+
+shapiro.test(TNF.ALFA.BASAL)
+shapiro.test(TNF.ALFA.FINAL)
+
+## Teste de Anderson-Darling
+library(nortest)
+ad.test(VITAMINA.D.BASAL)
+ad.test(VITAMINA.D.FINAL)
+
+ad.test(ADIPONECTINA.BASAL)
+ad.test(ADIPONECTINA.FINAL)
+
+ad.test(CTX.BASAL)
+ad.test(CTX.FINAL)
+
+ad.test(FAO.BASAL)
+ad.test(FAO.FINAL)
+
+ad.test(LEPTINA.BASAL)
+ad.test(LEPTINA.FINAL)
+
+ad.test(OPG.BASAL)
+ad.test(OPG.FINAL)
+
+ad.test(TNF.ALFA.BASAL)
+ad.test(TNF.ALFA.FINAL)
+
+## Teste de Mann-Whitney pareado
+wilcox.test(ADIPONECTINA.BASAL,ADIPONECTINA.FINAL,paired = T)
+wilcox.test(CTX.BASAL,CTX.FINAL,paired = T)
+wilcox.test(FAO.BASAL,FAO.FINAL,paired = T)
+wilcox.test(LEPTINA.BASAL,LEPTINA.FINAL,paired = T)
+wilcox.test(OPG.BASAL,OPG.FINAL,paired = T)
+wilcox.test(TNF.ALFA.BASAL,TNF.ALFA.FINAL,paired = T)
+
+## Teste t pareado
+t.test(ADIPONECTINA.FINAL,ADIPONECTINA.BASAL, paired = T,alternative = "g")
+t.test(CTX.FINAL,CTX.BASAL,paired = T, alternative = "l")
+#with(margarida.long,t.test(CTX~time, paired=T, alternative="g"))
+t.test(FAO.FINAL,FAO.BASAL,paired = T, alternative = "l")
+t.test(LEPTINA.FINAL,LEPTINA.BASAL,paired = T, alternative = "l")
+t.test(OPG.FINAL,OPG.BASAL,paired = T, alternative = "g")
+t.test(TNF.ALFA.FINAL,TNF.ALFA.BASAL,paired = T,alternative = "l")
+
+## Teste de Breuch Pagan (heterocedasticidade)
+library(lmtest)
+bptest(fit.vit)
+bptest(fit.adp)
+bptest(fit.ctx)
+bptest(fit.fao)
+bptest(fit.lep)
+bptest(fit.opg)
+bptest(fit.tnf)
