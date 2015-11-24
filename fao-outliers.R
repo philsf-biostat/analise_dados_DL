@@ -16,6 +16,7 @@ shapiro.test(FAO.FINAL)
 t.test(FAO.FINAL,FAO.BASAL,paired = T, alternative = "l")
 
 margarida.long <- reshape(margarida, varying = c('FAO.BASAL', 'FAO.FINAL'), idvar = 'Ordem', direction = 'long')
+library(ggplot2)
 ggplot(margarida.long, aes(x=time, y=FAO, group=Ordem)) + geom_line(alpha=.5)
 
 detach(margarida)
