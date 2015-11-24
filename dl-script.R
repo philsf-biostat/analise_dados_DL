@@ -20,3 +20,4 @@ margarida.long <- reshape(margarida, varying=c("ADIPONECTINA.BASAL", "ADIPONECTI
 attach(margarida.wide)
 attach(margarida.long)
 
+summary(margarida.wide,digits=2)
