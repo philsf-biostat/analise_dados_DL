@@ -21,19 +21,6 @@ margarida.long <- reshape(margarida, varying=c("ADIPONECTINA.BASAL", "ADIPONECTI
 attach(margarida.wide)
 attach(margarida.long)
 
-## Diferenças por medicamento?
-t.test(margarida$VITAMINA.D.BASAL[Medicamento=="Aclasta"],margarida$VITAMINA.D.BASAL[Medicamento=="Fosamax"])
-wilcox.test(margarida$VITAMINA.D.BASAL[Medicamento=="Aclasta"],margarida$VITAMINA.D.BASAL[Medicamento=="Fosamax"])
-
-t.test(margarida$OPG.BASAL[Medicamento=="Aclasta"],margarida$OPG.BASAL[Medicamento=="Fosamax"])
-t.test(margarida$OPG.FINAL[Medicamento=="Aclasta"],margarida$OPG.FINAL[Medicamento=="Fosamax"])
-
-t.test(margarida$LEPTINA.BASAL[Medicamento=="Aclasta"],margarida$LEPTINA.BASAL[Medicamento=="Fosamax"])
-t.test(margarida$LEPTINA.FINAL[Medicamento=="Aclasta"],margarida$LEPTINA.FINAL[Medicamento=="Fosamax"])
-
-t.test(margarida$ADIPONECTINA.BASAL[Medicamento=="Aclasta"],margarida$ADIPONECTINA.BASAL[Medicamento=="Fosamax"])
-t.test(margarida$ADIPONECTINA.FINAL[Medicamento=="Aclasta"],margarida$ADIPONECTINA.FINAL[Medicamento=="Fosamax"])
-
 ## Correlações entre valores basal e final
 cor(VITAMINA.D.BASAL,VITAMINA.D.FINAL) # Vitamina D
 
@@ -92,23 +79,6 @@ abline(fit.tnf)
 ## Busca de regressão múltipla
 bigfit<-lm(CALCIO.FINAL ~ OPG.BASAL + OPG.FINAL + VITAMINA.D.FINAL + VITAMINA.D.BASAL + ADIPONECTINA.BASAL + ADIPONECTINA.FINAL + CTX.BASAL + CTX.FINAL + FAO.BASAL + FAO.FINAL + LEPTINA.BASAL + LEPTINA.FINAL + TNF.ALFA.BASAL + TNF.ALFA.FINAL)
 summary(bigfit)
-
-## Teste de Mann-Whitney pareado
-wilcox.test(ADIPONECTINA.BASAL,ADIPONECTINA.FINAL,paired = T)
-wilcox.test(CTX.BASAL,CTX.FINAL,paired = T)
-wilcox.test(FAO.BASAL,FAO.FINAL,paired = T)
-wilcox.test(LEPTINA.BASAL,LEPTINA.FINAL,paired = T)
-wilcox.test(OPG.BASAL,OPG.FINAL,paired = T)
-wilcox.test(TNF.ALFA.BASAL,TNF.ALFA.FINAL,paired = T)
-
-## Teste t pareado
-t.test(ADIPONECTINA.FINAL,ADIPONECTINA.BASAL, paired = T,alternative = "g")
-t.test(CTX.FINAL,CTX.BASAL,paired = T, alternative = "l")
-#with(margarida.long,t.test(CTX~time, paired=T, alternative="g"))
-t.test(FAO.FINAL,FAO.BASAL,paired = T, alternative = "l")
-t.test(LEPTINA.FINAL,LEPTINA.BASAL,paired = T, alternative = "l")
-t.test(OPG.FINAL,OPG.BASAL,paired = T, alternative = "g")
-t.test(TNF.ALFA.FINAL,TNF.ALFA.BASAL,paired = T,alternative = "l")
 
 ## Teste de Breuch Pagan (heterocedasticidade)
 library(lmtest)
