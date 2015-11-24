@@ -1,23 +1,4 @@
-detach(margarida)
-margarida<-read.csv("BANCO PÓS QUALIFICAÇÃO 06_10_15.csv", header = T)
-
-# Guardando apenas as variáveis que serão utilizadas
-#margarida<-margarida[c("Ordem","Sexo","Medicamento","VITAMINAD.BASAL","VITAMINAD.FINAL","ADIPONECTINA.BASAL","ADIPONECTINA.FINAL","CTX.BASAL","CTX.FINAL","FAO.BASAL","FAO.FINAL","LEPTINA.BASAL","LEPTINA.FINAL","OPG.BASAL","OPG.FINAL","TNFALFA.BASAL","TNFALFA.FINAL","CALCIO.BASAL","CALCIO.FINAL")]
-margarida<-margarida[c("Ordem","Sexo","Medicamento","VITAMINAD.BASAL","VITAMINAD.FINAL","ADIPONECTINA.BASAL","ADIPONECTINA.FINAL","CTX.BASAL","CTX.FINAL","FAO.BASAL","FAO.FINAL","LEPTINA.BASAL","LEPTINA.FINAL","OPG.BASAL","OPG.FINAL","TNFALFA.BASAL","TNFALFA.FINAL")]
-
-# Retirando os pacientes do medicamento Protos
-margarida<-margarida[margarida$Medicamento!="Protos",]
-margarida<-droplevels(margarida)
-
-attach(margarida)
-
-#convertendo de wide para long
-margarida.wide <- margarida
-margarida.long <- reshape(margarida, varying=c("ADIPONECTINA.BASAL", "ADIPONECTINA.FINAL", "CTX.BASAL", "CTX.FINAL", "FAO.BASAL", "FAO.FINAL", "LEPTINA.BASAL","LEPTINA.FINAL","OPG.BASAL","OPG.FINAL","TNFALFA.BASAL","TNFALFA.FINAL", "VITAMINAD.BASAL", "VITAMINAD.FINAL"), idvar="Ordem", direction="long")
-# margarida<-margarida.long
-rm(margarida)
-# margarida.long$time <-ordered(margarida.long$time)
-
+## Modelos Lineares Mistos
 library(nlme)
 m1<-lme(ADIPONECTINA ~ time, random = ~ time |  VITAMINAD, data=margarida)
 m2<-lme(ADIPONECTINA~time+VITAMINAD+(1+time|Medicamento),data=margarida.long)
