@@ -93,51 +93,6 @@ abline(fit.tnf)
 bigfit<-lm(CALCIO.FINAL ~ OPG.BASAL + OPG.FINAL + VITAMINA.D.FINAL + VITAMINA.D.BASAL + ADIPONECTINA.BASAL + ADIPONECTINA.FINAL + CTX.BASAL + CTX.FINAL + FAO.BASAL + FAO.FINAL + LEPTINA.BASAL + LEPTINA.FINAL + TNF.ALFA.BASAL + TNF.ALFA.FINAL)
 summary(bigfit)
 
-## Teste de Shapiro-Wilk
-shapiro.test(VITAMINA.D.BASAL)
-shapiro.test(VITAMINA.D.FINAL)
-
-shapiro.test(ADIPONECTINA.BASAL)
-shapiro.test(ADIPONECTINA.FINAL)
-
-shapiro.test(CTX.BASAL)
-shapiro.test(CTX.FINAL)
-
-shapiro.test(FAO.BASAL)
-shapiro.test(FAO.FINAL)
-
-shapiro.test(LEPTINA.BASAL)
-shapiro.test(LEPTINA.FINAL)
-
-shapiro.test(OPG.BASAL)
-shapiro.test(OPG.FINAL)
-
-shapiro.test(TNF.ALFA.BASAL)
-shapiro.test(TNF.ALFA.FINAL)
-
-## Teste de Anderson-Darling
-library(nortest)
-ad.test(VITAMINA.D.BASAL)
-ad.test(VITAMINA.D.FINAL)
-
-ad.test(ADIPONECTINA.BASAL)
-ad.test(ADIPONECTINA.FINAL)
-
-ad.test(CTX.BASAL)
-ad.test(CTX.FINAL)
-
-ad.test(FAO.BASAL)
-ad.test(FAO.FINAL)
-
-ad.test(LEPTINA.BASAL)
-ad.test(LEPTINA.FINAL)
-
-ad.test(OPG.BASAL)
-ad.test(OPG.FINAL)
-
-ad.test(TNF.ALFA.BASAL)
-ad.test(TNF.ALFA.FINAL)
-
 ## Teste de Mann-Whitney pareado
 wilcox.test(ADIPONECTINA.BASAL,ADIPONECTINA.FINAL,paired = T)
 wilcox.test(CTX.BASAL,CTX.FINAL,paired = T)
