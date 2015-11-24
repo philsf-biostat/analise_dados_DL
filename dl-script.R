@@ -9,8 +9,8 @@ margarida<-margarida[c("Ordem","Sexo","Medicamento","VITAMINAD.BASAL","VITAMINAD
 margarida<-margarida[margarida$Medicamento!="Protos",]
 margarida<-droplevels(margarida)
 
-# Retirando o paciente P5, outlier do FAO basal
-margarida<-margarida[c(margarida$Ordem!="P5"),]
+## # Retirando o paciente P5, outlier do FAO basal
+## margarida<-margarida[c(margarida$Ordem!="P5"),]
 
 #convertendo de wide para long
 margarida.wide <- margarida
