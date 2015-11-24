@@ -21,46 +21,6 @@ margarida.long <- reshape(margarida, varying=c("ADIPONECTINA.BASAL", "ADIPONECTI
 attach(margarida.wide)
 attach(margarida.long)
 
-## Gráficos descriticos
-# Boxplots
-par(mfrow=c(1,1))
-boxplot(data.frame(Basal=VITAMINA.D.BASAL,Final=VITAMINA.D.FINAL),main="Vitamina D",ylab="ng/mL")
-
-par(mfrow=c(2,3))
-boxplot(data.frame(Basal=ADIPONECTINA.BASAL,Final=ADIPONECTINA.FINAL),main="Adiponectina",ylab="ng/ml")
-boxplot(data.frame(Basal=CTX.BASAL,Final=CTX.FINAL),main="CTX",ylab="ng/mL")
-boxplot(data.frame(Basal=FAO.BASAL,Final=FAO.FINAL),main="FAO",ylab="ug/L")
-boxplot(data.frame(Basal=LEPTINA.BASAL,Final=LEPTINA.FINAL),main="Leptina",ylab="pg/mL")
-boxplot(data.frame(Basal=OPG.BASAL,Final=OPG.FINAL),main="OPG",ylab="pg/mL")
-boxplot(data.frame(Basal=TNF.ALFA.BASAL,Final=TNF.ALFA.FINAL),main="TNF-a",ylab="pg/mL")
-#boxplot(data.frame(Basal=PTH.BASAL,Final=PTH.FINAL),main="PTH",ylab="")
-
-
-# library(Rlab)
-# bplot(data.frame(VITAMINA.D.BASAL,VITAMINA.D.FINAL),labels=c("Basal","Final"),main="Vitamina D")
-# bplot(data.frame(Basal=ADIPONECTINA.BASAL,Final=ADIPONECTINA.FINAL),main="Adiponectina")
-# bplot(data.frame(VITAMINA.D.BASAL,VITAMINA.D.FINAL),labels=c("Basal","Final"),main="Adiponectina")
-# bplot(data.frame(LEPTINA.BASAL,LEPTINA.FINAL),labels=c("Basal","Final"),main="Leptina")
-# bplot(data.frame(TNF.ALFA.BASAL,TNF.ALFA.FINAL),labels=c("Basal","Final"),main="TNF-a")
-# bplot(data.frame(OPG.BASAL,OPG.FINAL),labels=c("Basal","Final"),main="OPG")
-
-## Relacionando com medicamentos (??)
-par(mfrow=c(2,2))
-boxplot(VITAMINA.D.BASAL~Medicamento, main="Vitamina D Basal")
-boxplot(VITAMINA.D.FINAL~Medicamento, main="Vitamina D Final")
-boxplot(OPG.BASAL~Medicamento, main="OPG Basal")
-boxplot(OPG.FINAL~Medicamento, main="OPG Final")
-boxplot(ADIPONECTINA.BASAL~Medicamento, main="ADP Basal")
-boxplot(ADIPONECTINA.FINAL~Medicamento, main="ADP Final")
-boxplot(TNF.ALFA.BASAL~Medicamento, main="TNF-a Basal")
-boxplot(TNF.ALFA.FINAL~Medicamento, main="TNF-a Final")
-boxplot(LEPTINA.BASAL~Medicamento, main="LEP Basal")
-boxplot(LEPTINA.FINAL~Medicamento, main="LEP Final")
-boxplot(CTX.BASAL~Medicamento, main="CTX Basal")
-boxplot(CTX.FINAL~Medicamento, main="CTX FINAL")
-boxplot(FAO.BASAL~Medicamento, main="FAO Basal")
-boxplot(FAO.FINAL~Medicamento, main="FAO Final")
-
 ## Diferenças por medicamento?
 t.test(margarida$VITAMINA.D.BASAL[Medicamento=="Aclasta"],margarida$VITAMINA.D.BASAL[Medicamento=="Fosamax"])
 wilcox.test(margarida$VITAMINA.D.BASAL[Medicamento=="Aclasta"],margarida$VITAMINA.D.BASAL[Medicamento=="Fosamax"])
