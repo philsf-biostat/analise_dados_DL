@@ -5,7 +5,7 @@ x<-TNF.ALFA.FINAL
 x<-LEPTINA.FINAL
 x<-ADIPONECTINA.FINAL
 
-grafico<- function (x,titulo) {
+hist_norm <- function (x,titulo) {
   h<-hist(x,xlab=titulo,main="")
   xfit<-seq(min(x),max(x),length=length(x))
   yfit<-dnorm(xfit,mean=mean(x),sd=sd(x))
