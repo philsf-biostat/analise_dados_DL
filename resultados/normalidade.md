@@ -1,12 +1,16 @@
-# Shapiro-Wilk normality test
-## Vitamina D
+# Testes de normalidade
+
+p-valores dos testes de normalidade Shapiro-Wilk e Anderson-Darling.
+
+## Shapiro-Wilk normality test
+### Vitamina D
     data:  VITAMINAD.BASAL
     W = 0.90939, p-value = 0.05342
 
     data:  VITAMINAD.FINAL
     W = 0.9663, p-value = 0.6507
 
-# Marcadores
+### Marcadores
     data:  ADIPONECTINA.BASAL
     W = 0.98486, p-value = 0.9775
 
@@ -43,15 +47,15 @@
     data:  TNFALFA.FINAL
     W = 0.96421, p-value = 0.6046
 
-# Anderson-Darling normality test
-## Vitamina D
+## Anderson-Darling normality test
+### Vitamina D
     data:  VITAMINAD.BASAL
     A = 0.71181, p-value = 0.05363
 
     data:  VITAMINAD.FINAL
     A = 0.34152, p-value = 0.4595
 
-## Marcadores
+### Marcadores
     data:  ADIPONECTINA.BASAL
     A = 0.14189, p-value = 0.9659
 
