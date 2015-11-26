@@ -18,25 +18,28 @@ Para baixar todos os resultados em um único arquivo ZIP, veja o(s) link(s) abai
 
 Sumário das estatísticas descritivas das variáveis.
 
-* [descricao.txt][]
+* [descricao.txt][] ([download][download-desc-txt])
 
-[descricao.txt]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/resultados/descricoes.txt
+[descricao.txt]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/resultados/descricoes.md
+[download-desc-txt]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/resultados/descricoes.txt
 
 ## Teste de normalidade
 
 p-valores do teste de normalidade entre os valores Basal e Final da Vitamina D e dos 6 marcadores escolhidos.
 
-* [normalidade.txt][]
+* [normalidade.txt][] ([download][download-norm-txt])
 
-[normalidade.txt]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/resultados/normalidade.txt
+[normalidade.txt]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/resultados/normalidade.md
+[download-norm-txt]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/resultados/normalidade.txt
 
 ## Teste de diferenças
 
 p-valores do teste de Mann-Whitney entre os valores Basal e Final da Vitamina D e dos 6 marcadores escolhidos.
 
-* [diferencas.txt][]
+* [diferencas.txt][] ([download][download-diff-txt])
 
-[diferencas.txt]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/resultados/diferencas.txt
+[diferencas.txt]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/resultados/diferencas.md
+[download-diff-txt]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/resultados/diferencas.txt
 
 ## Figuras
 
