@@ -1,4 +1,4 @@
-# Descrições
+# Estatísticas descritivas
 
     Ordem    Sexo    Medicamento VITAMINAD.BASAL VITAMINAD.FINAL ADIPONECTINA.BASAL
      P10    : 1   F:20   Aclasta:11   Min.   : 4.0    Min.   : 5.1    Min.   :0.07
