@@ -1,0 +1,116 @@
+%\documentclass[pdftex,a4paper]{article}
+\documentclass[a4paper]{article}
+%%classes: article, report, book, proc, amsproc
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Misc
+
+% para acertar os acentos
+%\usepackage[brazilian]{babel} 
+%\usepackage[portuguese]{babel} 
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+% \usepackage{aeguill}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{fullpage}
+\usepackage{appendix}
+\usepackage{verbatim}
+\usepackage{graphicx} %See PDF section
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+% %%%%%%%%%%%%%%%%%%%%%%%%
+% %% BibTeX !!
+% %\usepackage{bibtex}
+% \bibliographystyle{mybibtex} % .bst file
+% %\bibstyle{prsty} % Choose Phys. Rev. style for bibliography
+
+% %% Natbib
+% \usepackage{natbib}
+% \bibpunct{[}{]}{;}{a}{,}{,}
+% %%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% PDF support
+
+%\usepackage[pdftex]{color,graphicx}
+%% Hyper-refs
+%\usepackage[pdftex]{hyperref} % for printing
+%\usepackage[pdftex,bookmarks,colorlinks]{hyperref} % for screen
+
+%% \newif\ifPDF
+%% \ifx\pdfoutput\undefined\PDFfalse
+%% \else\ifnum\pdfoutput > 0\PDFtrue
+%%      \else\PDFfalse
+%%      \fi
+%% \fi
+
+%% \ifPDF
+%%   \usepackage[T1]{fontenc}
+%%   \usepackage{aeguill}
+%%   \usepackage[pdftex]{graphicx,color}
+%%   \usepackage[pdftex]{hyperref}
+%% \else
+%%   \usepackage[T1]{fontenc}
+%%   \usepackage[dvips]{graphicx}
+%%   \usepackage[dvips]{hyperref}
+%% \fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Math
+\usepackage{amsmath,amsfonts,amssymb}
+% para usar R de Real do jeito que o povo gosta
+%\usepackage{amsfonts} % \mathbb
+% para usar as letras frescas como L de Espaco das Transf Lineares
+\usepackage{mathrsfs} % \mathscr
+
+% % Theorems' labels, etc.
+% \newtheorem{lema}{Lemma}[section] 
+% \newtheorem{teor}[lema]{Theorem}
+% \newtheorem{defi}[lema]{Definition}
+% \newtheorem{prop}[lema]{Proposition}
+% \newtheorem{coro}[lema]{Corolary}
+% \newtheorem{exem}[lema]{Example}
+% \newtheorem{apteor}{Theorem}[chapter]
+
+% Proof commands
+% \newcommand{\proofbegin}{\noindent{\bf Proof:} }
+% \newcommand{\proofend}{ \hfill $\Box$ \smallskip }
+
+% dt of integrals = \ud t
+\newcommand{\ud}{\mathrm{d}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%\twocolumn
+
+\author{Felipe Figueiredo}
+\title{Consultoria de Análise de Dados para Daisy Lyra (Mestrado Profissional INTO)}
+\date{2015}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Metodologia utilizada}
+
+\section{Resultados}
+
+\subsection{Estatísticas descritivas}
+
+
+\subsection{Normalidade}
+
+\subsection{Testes pareados}
+
+
+
+\end{document}
