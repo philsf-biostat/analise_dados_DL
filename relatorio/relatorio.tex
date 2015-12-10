@@ -8,9 +8,9 @@
 %% Misc
 
 % para acertar os acentos
-%\usepackage[brazilian]{babel} 
-%\usepackage[portuguese]{babel} 
-\usepackage[english]{babel}
+\usepackage[brazilian]{babel} 
+% \usepackage[portuguese]{babel} 
+% \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
 % \usepackage{aeguill}
 %\usepackage[latin1]{inputenc}
@@ -86,6 +86,7 @@
 \newcommand{\ud}{\mathrm{d}}
 %%%%%%%%%%%%%%%%%%%%%%%%
 
+\usepackage{url}
 
 
 
@@ -98,19 +99,119 @@
 
 \begin{document}
 \maketitle
+\newpage
 \tableofcontents
-
+\listoffigures
+\listoftables
+\newpage
 \section{Metodologia utilizada}
+
+(O texto abaixo foi adaptado da versão original do projeto).
+
+
+A análise descritiva foi apresentada na forma de tabelas os dados observados, expressos pela média, desvio padrão, mediana, amplitude interquartílica (AIQ), mínimo e máximo para dados numéricos (quantitativos) e pela frequência (n) e percentual (\%) para dados categóricos (qualitativos). São apresentados gráficos descritivos das variáveis basais e finais.
+
+Foi aplicado o teste de normalidade de Shapiro-Wilks nas variáveis numéricas. A comparação das variáveis basais e finais foi feita com o teste t pareado para variáveis normalmente distribuídas,  e com o teste de Mann-Whitney pareado para variáveis que tiveram a hipótese de normalidade rejeitada. Em todas as análises, foi adotada a  significância de 5\%. As análises estatística foram feitas utilizando o software estatístico R, versão 3.2.2 (\url{https://www.R-project.org}).
 
 \section{Resultados}
 
 \subsection{Estatísticas descritivas}
 
+\subsubsection{Estatísticas}
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c|ccccc}
+    \hline
+    Variável& Média (DP) &Mediana (AIQ)&&&\\
+    \hline
+    \hline
+    Vitamina D basal&&&&&\\
+    Vitamina D final&&&&&\\
+    \hline
+    ADP basal &&&&&\\
+    ADP final&&&&&\\
+    CTX basal &&&&&\\
+    CTX final&&&&&\\
+    FAO basal &&&&&\\
+    FAO final&&&&&\\
+    LEP basal &&&&&\\
+    LEP final&&&&&\\
+    OPG basal &&&&&\\
+    OPG final&&&&&\\
+    TNF basal &&&&&\\
+    TNF final&&&&&\\
+    \hline
+  \end{tabular}
+  \caption[Estatísticas descritivas]{Estatísticas descritivas (terminar de preencher)}
+\end{table}
+
+\begin{itemize}
+\item 3 colunas, com cada var por linha, ou uma linha com colunas para basal e final?
+\end{itemize}
+
+\subsubsection{Gráficos}
+
+Figuras \ref{fig:vitd-boxplot}, \ref{fig:marcadores-boxplot} mostram as variáveis\ldots
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=.5\textwidth]{../figuras/vitaminad}
+  \caption[Níveis basal e final de vitamina D]{Níveis basal e final de vitamina D. (boxplot: mediana, quartis, outliers)}
+  \label{fig:vitd-boxplot}
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=.5\textwidth]{../figuras/boxplots}
+  \caption[Níveis basal e final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF]{Níveis basal e final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas e boxplot: mediana, quartis, outliers)}
+  \label{fig:marcadores-boxplot}
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=.5\textwidth]{../figuras/vitd-scatter}
+  \caption{preencher}
+  \label{fig:vitd-scatter}
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=.5\textwidth]{../figuras/scatterplots}
+  \caption{preencher}
+  \label{fig:marcadores-scatter}
+\end{figure}
+
+\begin{itemize}
+\item Fazer histogramas das variáveis.
+\end{itemize}
+
 
 \subsection{Normalidade}
 
+P: textual ou tabela?
+
 \subsection{Testes pareados}
 
-
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c|cc|c}
+    \hline
+    Variável&Valor basal&Valor final&p-valor\\
+    \hline
+    \hline
+    Vitamina D&&&\\
+\hline
+    ADP&&&\\
+    CTX&&&\\
+    FAO&&&\\
+    LEP&&&\\
+    OPG&&&\\
+    TNF&&&\\
+    \hline
+  \end{tabular}
+  \caption[Diferenças entre os valores basal e final dos marcadores]{Diferenças entre os valores basal e final dos marcadores. Siglas... (terminar)}
+  \label{tab:testes-pareados}
+\end{table}
 
 \end{document}
