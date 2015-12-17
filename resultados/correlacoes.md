@@ -1,0 +1,45 @@
+#Correlação
+
+## Testes de correlação não-paramétrica de Spearman
+
+	Spearman's rank correlation rho
+
+data:  VITAMINAD.FINAL and ADIPONECTINA.FINAL
+S = 1360.2, p-value = 0.6143
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+     rho 
+0.116748 
+
+data:  VITAMINAD.FINAL and CTX.FINAL
+S = 1516, p-value = 0.9465
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+       rho 
+0.01559961 
+
+data:  VITAMINAD.FINAL and FAO.FINAL
+S = 1128.7, p-value = 0.2419
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+0.2670565 
+
+data:  VITAMINAD.FINAL and LEPTINA.FINAL
+S = 1346.7, p-value = 0.5878
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+0.1254896 
+data:  VITAMINAD.FINAL and OPG.FINAL
+S = 1491.1, p-value = 0.8914
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+       rho 
+0.03174166 
+data:  VITAMINAD.FINAL and TNFALFA.FINAL
+S = 1545, p-value = 0.9888
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+        rho 
+-0.00325947 
