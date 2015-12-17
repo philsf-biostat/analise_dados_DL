@@ -61,7 +61,6 @@ Figura 4: Comparação entre os níveis basal e final dos marcadores ADP, CTX, F
 
 Considerando conjuntamente os valores basal e final, nenhuma das variáveis parece ter distribuição normal.
 
-
 ## Testes pareados
 
 Variável | Desfecho | p-valor
