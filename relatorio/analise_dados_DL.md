@@ -57,13 +57,30 @@ Figura 4: Comparação entre os níveis basal e final dos marcadores ADP, CTX, F
 
 ## Normalidade
 
-- P: textual ou tabela?
+Considerando conjuntamente os valores basal e final, nenhuma das variáveis parece ter distribuição normal. Deve-se rejeitar a hipótese de normalidade de **todas** as variáveis, e utilizar apenas métodos e testes não-paramétricos. Tabela 2.
 
-Considerando conjuntamente os valores basal e final, nenhuma das variáveis parece ter distribuição normal.
+Variável | Normal? | p-valor
+---| --- | ---
+Vitamina D basal | x | 0.05342
+Vitamina D final | x | 0.6507
+ADP basal | x | 0.9775
+ADP final | x | 0.8827
+CTX basal | x | 0.7354
+CTX final | x | 0.16
+FAO basal | x | 0.2291
+FAO final | x | 0.8838
+LEP basal | x | 0.2637
+LEP final | x | 0.05006
+OPG basal | x | 0.0624
+OPG final | x | 0.3222
+TNF basal | x | 0.2568
+TNF final | x | 0.6046
+
+Tabela 2: Testes de normalidade dos níveis basal e final da Vitamina D e dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (completar, siglas, etc). P-valores apresentados para o teste de Shapiro-Wilks.
 
 ## Testes pareados
 
-Todos os testes pareados indicaram aumento/diminuição altamente significativa entre o valor basal e final de cada variável. Tabela 2.
+Todos os testes pareados indicaram aumento/diminuição altamente significativa entre o valor basal e final de cada variável. Tabela 3.
 
 Variável | Desfecho | p-valor
 --- | --- | --- | ---
@@ -74,11 +91,11 @@ LEP | diminuiu | 0.0002087
 OPG | aumentou | 4.704e-05
 TNF | diminuiu | 0.0003489
 
-Tabela 2: Diferenças entre os valores basal e final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas). P-valores apresentados de acordo com o teste de Mann-Whitney pareado.
+Tabela 3: Diferenças entre os valores basal e final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas). P-valores apresentados de acordo com o teste de Mann-Whitney pareado.
 
 ## Correlações
 
-Nenhuma das correlações entre Vitamina D e marcadores foi significativa com os dados analisados. Tabela 3
+Nenhuma das correlações entre Vitamina D e marcadores foi significativa com os dados analisados. Tabela 4
 
 Variável | rho | p-valor
 --- | --- | --- | ---
@@ -89,7 +106,7 @@ LEP | 0.1254896 | 0.5878
 OPG | 0.03174166 | 0.8914
 TNF | -0.00325947 | 0.9888
 
-Tabela 3: Coeficientes de correlação de Spearman entre o nível final de Vitamina D e o nível final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas).
+Tabela 4: Coeficientes de correlação de Spearman entre o nível final de Vitamina D e o nível final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas).
 
 ## Conclusões sintéticas
 
