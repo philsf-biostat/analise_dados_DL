@@ -1,12 +1,12 @@
 ## Gráficos descriticos
 # Boxplots
 
-png("../figuras/vitaminad.png")
+png("../figuras/boxplots-vitaminad.png")
 par(mfrow=c(1,1))
 boxplot(data.frame(Basal=VITAMINAD.BASAL,Final=VITAMINAD.FINAL),main="Vitamina D",ylab="ng/mL")
 dev.off()
 
-png("../figuras/boxplots.png")
+png("../figuras/boxplots-marcadores.png")
 par(mfrow=c(2,3))
 boxplot(data.frame(Basal=ADIPONECTINA.BASAL,Final=ADIPONECTINA.FINAL),main="Adiponectina",ylab="ng/ml")
 boxplot(data.frame(Basal=CTX.BASAL,Final=CTX.FINAL),main="CTX",ylab="ng/mL")
