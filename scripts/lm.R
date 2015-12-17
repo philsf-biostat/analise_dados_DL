@@ -15,7 +15,7 @@ par(mfrow=c(1,1))
 fit.vit<-lm(VITAMINAD.FINAL~VITAMINAD.BASAL)
 summary(fit.vit)
 plot(VITAMINAD.BASAL,VITAMINAD.FINAL)
-abline(fit.vit)
+abline(fit.vit, lwd=2, col="blue")
 
 par(mfrow=c(2,3))
 
@@ -23,37 +23,37 @@ par(mfrow=c(2,3))
 fit.adp<-lm(ADIPONECTINA.FINAL~ADIPONECTINA.BASAL)
 summary(fit.adp)
 plot(ADIPONECTINA.BASAL,ADIPONECTINA.FINAL)
-abline(fit.adp)
+abline(fit.adp, lwd=2, col="blue")
 
 # CTX
 fit.ctx<-lm(CTX.FINAL~CTX.BASAL)
 summary(fit.ctx)
 plot(CTX.BASAL,CTX.FINAL)
-abline(fit.ctx)
+abline(fit.ctx, lwd=2, col="blue")
 
 # FAO
 fit.fao<-lm(FAO.FINAL~FAO.BASAL)
 summary(fit.fao)
 plot(FAO.BASAL,FAO.FINAL)
-abline(fit.fao)
+abline(fit.fao, lwd=2, col="blue")
 
 #LEPTINA
 fit.lep<-lm(LEPTINA.FINAL~LEPTINA.BASAL)
 summary(fit.lep)
 plot(LEPTINA.BASAL,LEPTINA.FINAL)
-abline(fit.lep)
+abline(fit.lep, lwd=2, col="blue")
 
 # OSTEOPROTEGERINA
 fit.opg<-lm(OPG.FINAL~OPG.BASAL)
 summary(fit.opg)
 plot(OPG.BASAL,OPG.FINAL)
-abline(fit.opg)
+abline(fit.opg, lwd=2, col="blue")
 
 # TNFALFA
 fit.tnf<-lm(TNFALFA.FINAL~TNFALFA.BASAL)
 summary(fit.tnf)
 plot(TNFALFA.BASAL,TNFALFA.FINAL)
-abline(fit.tnf)
+abline(fit.tnf, lwd=2, col="blue")
 
 ## Busca de regressão múltipla
 # bigfit<-lm(CALCIO.FINAL ~ OPG.BASAL + OPG.FINAL + VITAMINA.D.FINAL + VITAMINA.D.BASAL + ADIPONECTINA.BASAL + ADIPONECTINA.FINAL + CTX.BASAL + CTX.FINAL + FAO.BASAL + FAO.FINAL + LEPTINA.BASAL + LEPTINA.FINAL + TNF.ALFA.BASAL + TNF.ALFA.FINAL)
