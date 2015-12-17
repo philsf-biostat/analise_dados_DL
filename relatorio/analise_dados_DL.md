@@ -49,6 +49,8 @@ Os níveis basal e final foram significativamente diferentes, conforme seção X
 
 Figura 3: Comparação entre a Vitamina D basal e final (completar legenda)
 
+Sugestão: **não incluir a figura acima, da reta de melhor ajuste da vitamina D**. Incluir no trabalho apenas as figuras 1 e 2 que ilustram a diferença entre os níveis basal e final, e a figura abaixo, com os dados e a reta de melhor ajuste dos marcadores.
+
 ![Scatterplot marcadores](../figuras/scatterplots-marcadores.png)
 
 Figura 4: Comparação entre os níveis basal e final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (completar, siglas, etc). A linha azul é a reta de melhor ajuste aos dados. Índices de correlação de Pearson/Spearman: ADP (r=), CTX (r=), FAO (r=), LEP (r=), OPG (r=) e TNF (r=). (Incluir correlações)
