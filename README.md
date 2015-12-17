@@ -7,7 +7,7 @@ Descrição, síntese numérica e testes pareados das variáveis
 
 Para baixar todos os resultados em um único arquivo ZIP, veja o(s) link(s) abaixo:
 
-* [v0.9][] ([download][download-v0.9]) (rascunho)
+* ~~[v0.9][] ([download][download-v0.9]) (rascunho)~~
 * [v0.9.1][] ([download][download-v0.9.1]) (rascunho)
 * v1.0 (download)
 
