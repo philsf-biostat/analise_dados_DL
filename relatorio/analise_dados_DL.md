@@ -88,4 +88,4 @@ LEP | 0.1254896 | 0.5878
 OPG | 0.03174166 | 0.8914
 TNF | -0.00325947 | 0.9888
 
-Tabela: Coeficientes de correlação de Spearman entre o nível final de Vitamina D e o nível final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas).
+Tabela 3: Coeficientes de correlação de Spearman entre o nível final de Vitamina D e o nível final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas).
