@@ -55,11 +55,11 @@ Figuras descritivas das variáveis.
 * [dispersão marcadores][] ([download][download-marc-scat])
 
 
-[boxplot Vitamina D]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/figuras/vitaminad.png
-[download-vitd-bp]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/figuras/vitaminad.png
-[boxplot marcadores]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/figuras/boxplots.png
-[download-marc-bp]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/figuras/boxplots.png
-[dispersão Vitamina D]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/figuras/vitd-scatter.png
-[download-vitd-scat]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/figuras/vitd-scatter.png
-[dispersão marcadores]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/figuras/scatterplots.png
-[download-marc-scat]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/figuras/scatterplots.png
+[boxplot Vitamina D]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/figuras/boxplots-vitaminad.png
+[download-vitd-bp]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/figuras/boxplots-vitaminad.png
+[boxplot marcadores]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/figuras/boxplots-marcadores.png
+[download-marc-bp]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/figuras/boxplots-marcadores.png
+[dispersão Vitamina D]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/figuras/scatterplots-vitaminad.png
+[download-vitd-scat]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/figuras/scatterplots-vitaminad.png
+[dispersão marcadores]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/figuras/scatterplots-marcadores.png
+[download-marc-scat]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/figuras/scatterplots-marcadores.png
