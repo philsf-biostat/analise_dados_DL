@@ -18,6 +18,14 @@ Para baixar todos os resultados em um único arquivo ZIP, veja o(s) link(s) abai
 [download-v1.0]: https://github.com/philsf-biostat/analise_dados_DL/archive/v1.0.zip
 [Todos os releases]: https://github.com/philsf-biostat/analise_dados_DL/releases
 
+## Relatório
+
+Todas as informações descritas abaixo estão sumarizadas no relatório.
+
+[Relatório][]
+
+[Relatório]: relatorio/analise_dados_DL.md
+
 ## Estatísticas descritivas
 
 Sumário das estatísticas descritivas das variáveis.
