@@ -8,12 +8,15 @@ Descrição, síntese numérica e testes pareados das variáveis
 Para baixar todos os resultados em um único arquivo ZIP, veja o(s) link(s) abaixo:
 
 * [v0.9][] ([download][download-v0.9]) (rascunho)
+* [v0.9.1][] ([download][download-v0.9.1]) (rascunho)
 * v1.0 (download)
 
 [Todos os releases][].
 
 [v0.9]: https://github.com/philsf-biostat/analise_dados_DL/releases/tag/v0.9
 [download-v0.9]: https://github.com/philsf-biostat/analise_dados_DL/archive/v0.9.zip
+[v0.9.1]: https://github.com/philsf-biostat/analise_dados_DL/releases/tag/v0.9.1
+[download-v0.9.1]: https://github.com/philsf-biostat/analise_dados_DL/archive/v0.9.1.zip
 [v1.0]: https://github.com/philsf-biostat/analise_dados_DL/releases/tag/v1.0
 [download-v1.0]: https://github.com/philsf-biostat/analise_dados_DL/archive/v1.0.zip
 [Todos os releases]: https://github.com/philsf-biostat/analise_dados_DL/releases
