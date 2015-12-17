@@ -73,3 +73,17 @@ TNF | diminuiu | 0.0003489
 
 Tabela 2: Diferenças entre os valores basal e final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas). P-valores apresentados de acordo com o teste de Mann-Whitney pareado.
 
+## Correlações
+
+Nenhuma das correlações foi significativa com os dados analisados.
+
+Variável | rho | p-valor
+--- | --- | --- | ---
+ADP | 0.116748 | 0.6143
+CTX | 0.01559961 | 0.9465
+FAO | 0.2670565 | 0.2419
+LEP | 0.1254896 | 0.5878
+OPG | 0.03174166 | 0.8914
+TNF | -0.00325947 | 0.9888
+
+Tabela: Coeficientes de correlação de Spearman entre o nível final de Vitamina D e o nível final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas).
