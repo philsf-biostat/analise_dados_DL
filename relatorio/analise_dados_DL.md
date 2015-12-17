@@ -108,7 +108,12 @@ TNF | -0.00325947 | 0.9888
 
 Tabela 4: Coeficientes de correlação de Spearman entre o nível final de Vitamina D e o nível final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas).
 
-## Conclusões sintéticas
+# Conclusões sintéticas
+
+- Nenhuma das variáveis parece ser normalmente distribuída (Tabela 2). Foram utilizados testes não-paramétricos.
+- Todas as diferenças entre o nível basal e final foram altamente significativas (Tabela 3)
+- Nenhuma correlação entre a Vitamina D e os marcadores foi significativa (Tabela 4)
+- Algumas correlações entre o nível basal e final foram significativas (Figura 4)
 
 A maior parte das correlações não foram significativas, no entanto os testes de diferença foram altamente significativos. Isso pode ser observado quando a correlação discorda da diferença. Por exemplo, FAO tem correlação positiva (rho=0.3164392), embora seu nível final tenha sido significativamente **menor** que o nível basal (p-valor=0.008773), o que pode ser observado na Figura 2.
 
