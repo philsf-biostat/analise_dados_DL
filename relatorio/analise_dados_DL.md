@@ -110,7 +110,7 @@ Tabela 4: Coeficientes de correlação de Spearman entre o nível final de Vitam
 
 ## Conclusões sintéticas
 
-A maior parte das correlações não foram significativas, no entanto os testes de diferença foram altamente significativos. Isso pode ser observado quando a correlação discorda da diferença. Por exemplo, FAO tem correlação marginalmente positiva (rho=0.03402), embora seu nível final tenha sido significativamente **menor** que o nível basal (p-valor=0.008773), o que pode ser observado na Figura 2.
+A maior parte das correlações não foram significativas, no entanto os testes de diferença foram altamente significativos. Isso pode ser observado quando a correlação discorda da diferença. Por exemplo, FAO tem correlação positiva (rho=0.3164392), embora seu nível final tenha sido significativamente **menor** que o nível basal (p-valor=0.008773), o que pode ser observado na Figura 2.
 
 Minha sugestão é evitar discutir os valores de correlação mas apenas apresentar os resultados, indicando que não são significativos.
 
