@@ -62,25 +62,14 @@ Considerando conjuntamente os valores basal e final, nenhuma das variáveis pare
 
 ## Testes pareados
 
-Variável | Valor basal mediano (AIQ)  | Valor final mediano (AIQ)  | p-valor
+Variável | Desfecho | p-valor
 --- | --- | --- | ---
-ADP |x | x |x
-CTX |x |x |x
-FAO |x |x |x
-LEP |x |x |x
-OPG |x |x |x
-TNF |x |x |x
+ADP | aumentou | 3.683e-05
+CTX | diminuiu | 0.0004796
+FAO | diminuiu | 0.008773
+LEP | diminuiu | 0.0002087
+OPG | aumentou | 4.704e-05
+TNF | diminuiu | 0.0003489
 
-Tabela 2: Diferenças entre os valores basal e final dos marcadores. Siglas... (terminar). Mann-Whitney pareado
-
-Ouro (todos os p-valores são significativos para os resultados abaixo):
-
-
-- Vitamina D aumentou
-- ADP aumentou
-- CTX diminuiu
-- FAO diminuiu
-- LEP diminuiu
-- OPG aumentou
-- TNF diminuiu
+Tabela 2: Diferenças entre os valores basal e final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas). P-valores apresentados de acordo com o teste de Mann-Whitney pareado.
 
