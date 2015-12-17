@@ -47,13 +47,13 @@ Os níveis basal e final foram significativamente diferentes, conforme seção X
 
 ![Scatterplot Vitamina D](../figuras/scatterplots-vitaminad.png)
 
-Figura 3: Comparação entre a Vitamina D basal e final (completar legenda)
+Figura 3: Comparação entre a Vitamina D basal e final (completar legenda). Índice de correlação de Spearman: -0.1241066 (p-valor=0.592)
 
 Sugestão: **não incluir a figura acima, da reta de melhor ajuste da vitamina D**. Incluir no trabalho apenas as figuras 1 e 2 que ilustram a diferença entre os níveis basal e final, e a figura abaixo, com os dados e a reta de melhor ajuste dos marcadores.
 
 ![Scatterplot marcadores](../figuras/scatterplots-marcadores.png)
 
-Figura 4: Comparação entre os níveis basal e final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (completar, siglas, etc). A linha azul é a reta de melhor ajuste aos dados. Índices de correlação de Pearson/Spearman: ADP (r=), CTX (r=), FAO (r=), LEP (r=), OPG (r=) e TNF (r=). (Incluir correlações)
+Figura 4: Comparação entre os níveis basal e final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (completar, siglas, etc). A linha azul é a reta de melhor ajuste aos dados. Índices de correlação de Spearman: ADP (rho=0.6564454, p-valor=0.001229), CTX (rho=-0.1102081, p-valor=0.6344), FAO (rho=0.3164392, p-valor=0.1623), LEP (rho=0.547378, p-valor=0.01022), OPG (rho=0.8328939, p-valor=2.791e-06) e TNF (rho=0.464204, p-valor=0.03402).
 
 ## Normalidade
 
