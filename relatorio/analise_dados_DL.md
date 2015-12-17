@@ -11,7 +11,7 @@ Foi aplicado o teste de normalidade de Shapiro-Wilks nas variáveis numéricas. 
 ### Estatísticas
 
 Variável | Média (DP) | Mediana (AIQ)
---| -- | -- 
+---| --- | ---
 Vitamina D basal | x | x
 Vitamina D final | x | x
 ADP basal | x | x
@@ -27,29 +27,30 @@ OPG final | x | x
 TNF basal | x | x
 TNF final | x | x
 
-
-Tabela 1
+Tabela 1: Estatísticas descritivas da vitamina D e marcadores (siglas), em média (DP), mediana (AIQ).
 
 As estatísticas descritivas das variáveis analisadas estão sumarizadas na tabela
-
-(Legenda) Estatísticas descritivas dos dados numéricos (terminar de preencher)
 
 ### Gráficos
 
 ![Boxplots da Vitamina D](../figuras/boxplots-vitaminad.png)
+
 Figura 1: Níveis basal e final da Vitamina D (boxplot: mediana, quartis, outliers)
 
 ![Boxplots dos marcadores](../figuras/boxplots-marcadores.png)
+
 Figura 2: Níveis basal e final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas e boxplot: mediana, quartis, outliers)
 
 São apresentadas nas figuras 3 e 4 as retas de melhor ajuste aos ...
 
 Os níveis basal e final foram significativamente diferentes, conforme seção X, e resumidos na tabela X.
 
-![Scatterplot Vitamina D](../figuras/vitd-scatter.png)
+![Scatterplot Vitamina D](../figuras/scatterplots-vitaminad.png)
+
 Figura 3: Comparação entre a Vitamina D basal e final (completar legenda)
 
-![Scatterplot marcadores](../figuras/scatterplots.png)
+![Scatterplot marcadores](../figuras/scatterplots-marcadores.png)
+
 Figura 4: Comparação entre os níveis basal e final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (completar, siglas, etc). A linha azul é a reta de melhor ajuste aos dados. Índices de correlação de Pearson/Spearman: ADP (r=), CTX (r=), FAO (r=), LEP (r=), OPG (r=) e TNF (r=). (Incluir correlações)
 
 ## Normalidade
