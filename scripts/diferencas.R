@@ -1,4 +1,5 @@
 ## Teste de Mann-Whitney pareado
+wilcox.test(VITAMINAD.FINAL,VITAMINAD.BASAL, paired = T, alternative = "g")
 wilcox.test(ADIPONECTINA.FINAL,ADIPONECTINA.BASAL, paired = T, alternative = "g")
 wilcox.test(CTX.FINAL,CTX.BASAL, paired = T, alternative = "l")
 wilcox.test(FAO.FINAL,FAO.BASAL, paired = T, alternative = "l")
