@@ -1,8 +1,12 @@
 ## Gráficos descriticos
 # Boxplots
+
+png("../figuras/vitaminad.png")
 par(mfrow=c(1,1))
 boxplot(data.frame(Basal=VITAMINAD.BASAL,Final=VITAMINAD.FINAL),main="Vitamina D",ylab="ng/mL")
+dev.off()
 
+png("../figuras/boxplots.png")
 par(mfrow=c(2,3))
 boxplot(data.frame(Basal=ADIPONECTINA.BASAL,Final=ADIPONECTINA.FINAL),main="Adiponectina",ylab="ng/ml")
 boxplot(data.frame(Basal=CTX.BASAL,Final=CTX.FINAL),main="CTX",ylab="ng/mL")
@@ -10,6 +14,7 @@ boxplot(data.frame(Basal=FAO.BASAL,Final=FAO.FINAL),main="FAO",ylab="ug/L")
 boxplot(data.frame(Basal=LEPTINA.BASAL,Final=LEPTINA.FINAL),main="Leptina",ylab="pg/mL")
 boxplot(data.frame(Basal=OPG.BASAL,Final=OPG.FINAL),main="OPG",ylab="pg/mL")
 boxplot(data.frame(Basal=TNFALFA.BASAL,Final=TNFALFA.FINAL),main="TNF-a",ylab="pg/mL")
+dev.off()
 
 # library(Rlab)
 # bplot(data.frame(VITAMINAD.BASAL,VITAMINAD.FINAL),labels=c("Basal","Final"),main="Vitamina D")
