@@ -1,13 +1,3 @@
-## Correlações entre valores basal e final
-cor(VITAMINAD.BASAL,VITAMINAD.FINAL) # Vitamina D
-
-cor(ADIPONECTINA.BASAL,ADIPONECTINA.FINAL) # ADIPONECTINA
-cor(CTX.BASAL,CTX.FINAL) # CTX
-cor(FAO.BASAL,FAO.FINAL) # FAO
-cor(LEPTINA.BASAL,LEPTINA.FINAL) # LEPTINA
-cor(OPG.BASAL,OPG.FINAL) # OSTEOPROTEGERINA
-cor(TNFALFA.BASAL,TNFALFA.FINAL) # TNFALFA
-
 ## Regressões: Final ~ Basal + Vitamina(??)
 # VITAMINA D
 png("../figuras/scatterplots-vitaminad.png")
