@@ -1,12 +1,12 @@
 ## Correlações entre valores basal e final
-cor(VITAMINAD.BASAL,VITAMINAD.FINAL) # Vitamina D
+cor.test(VITAMINAD.BASAL,VITAMINAD.FINAL,method="spearman") # Vitamina D
 
-cor(ADIPONECTINA.BASAL,ADIPONECTINA.FINAL,method="spearman") # ADIPONECTINA
-cor(CTX.BASAL,CTX.FINAL,method="spearman") # CTX
-cor(FAO.BASAL,FAO.FINAL,method="spearman") # FAO
-cor(LEPTINA.BASAL,LEPTINA.FINAL,method="spearman") # LEPTINA
-cor(OPG.BASAL,OPG.FINAL,method="spearman") # OSTEOPROTEGERINA
-cor(TNFALFA.BASAL,TNFALFA.FINAL,method="spearman") # TNFALFA
+cor.test(ADIPONECTINA.BASAL,ADIPONECTINA.FINAL,method="spearman") # ADIPONECTINA
+cor.test(CTX.BASAL,CTX.FINAL,method="spearman") # CTX
+cor.test(FAO.BASAL,FAO.FINAL,method="spearman") # FAO
+cor.test(LEPTINA.BASAL,LEPTINA.FINAL,method="spearman") # LEPTINA
+cor.test(OPG.BASAL,OPG.FINAL,method="spearman") # OSTEOPROTEGERINA
+cor.test(TNFALFA.BASAL,TNFALFA.FINAL,method="spearman") # TNFALFA
 
 ## Correlação entre VitD e marcadores (ambos nível final)
 cor(VITAMINAD.FINAL,ADIPONECTINA.FINAL,method="spearman") # ADP
