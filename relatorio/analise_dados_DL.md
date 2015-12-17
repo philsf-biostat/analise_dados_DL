@@ -63,6 +63,8 @@ Considerando conjuntamente os valores basal e final, nenhuma das variáveis pare
 
 ## Testes pareados
 
+Todos os testes pareados indicaram aumento/diminuição altamente significativa entre o valor basal e final de cada variável. Tabela 2.
+
 Variável | Desfecho | p-valor
 --- | --- | --- | ---
 ADP | aumentou | 3.683e-05
@@ -76,7 +78,7 @@ Tabela 2: Diferenças entre os valores basal e final dos marcadores ADP, CTX, FA
 
 ## Correlações
 
-Nenhuma das correlações foi significativa com os dados analisados.
+Nenhuma das correlações entre Vitamina D e marcadores foi significativa com os dados analisados. Tabela 3
 
 Variável | rho | p-valor
 --- | --- | --- | ---
