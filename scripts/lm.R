@@ -10,7 +10,7 @@ cor(TNFALFA.BASAL,TNFALFA.FINAL) # TNFALFA
 
 ## Regressões: Final ~ Basal + Vitamina(??)
 # VITAMINA D
-png("../figuras/vitd-scatter.png")
+png("../figuras/scatterplots-vitaminad.png")
 par(mfrow=c(1,1))
 
 fit.vit<-lm(VITAMINAD.FINAL~VITAMINAD.BASAL)
@@ -20,7 +20,7 @@ abline(fit.vit, lwd=2, col="blue")
 
 dev.off()
 
-png("../figuras/scatterplots.png")
+png("../figuras/scatterplots-marcadores.png")
 par(mfrow=c(2,3))
 
 # ADIPONECTINA
