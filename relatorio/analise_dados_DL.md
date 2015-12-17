@@ -1,8 +1,8 @@
 # Metodologia utilizada
 
-A análise descritiva foi apresentada na forma de tabelas os dados observados, expressos pela média, desvio padrão, mediana, amplitude interquartílica (AIQ), mínimo e máximo para dados numéricos (quantitativos) e pela frequência (n) e percentual (%) para dados categóricos (qualitativos). São apresentados gráficos descritivos das variáveis basais e finais. Ao longo do texto, as variáveis normais foram sumarizadas como média +/ desvio-padrão (DP), e as variáveis não-normais como mediana +- AIQ.
+A análise descritiva foi apresentada na forma de tabelas os dados observados, expressos pela média, desvio padrão, mediana, amplitude interquartílica (AIQ), mínimo e máximo para dados numéricos (quantitativos) e pela frequência (n) e percentual (%) para dados categóricos (qualitativos). São apresentados gráficos descritivos das variáveis basais e finais. Ao longo do texto, as variáveis normais foram sumarizadas como média +/ desvio padrão (DP), e as variáveis não normais como mediana +- AIQ.
 
-Foi aplicado o teste de normalidade de Shapiro-Wilks nas variáveis numéricas. A comparação das variáveis basais e finais foi feita com o teste t pareado para variáveis normalmente distribuídas, e com o teste de Mann-Whitney pareado para variáveis que tiveram a hipótese de normalidade rejeitada. Foram calculadas as correlações entre o nível final de Vitamina D e o nível final de cada marcador. Para variáveis normais, foi aplicada a correlação de Pearson, e para variáveis não-normais, a correlação não-parmétrica de Spearman. Em todas as análises, foi adotada a  significância de 5%. As análises estatística foram feitas utilizando o software estatístico R, versão 3.2.2 (https://www.R-project.org).
+Foi aplicado o teste de normalidade de Shapiro-Wilks nas variáveis numéricas. A comparação das variáveis basais e finais foi feita com o teste t pareado para variáveis normalmente distribuídas, e com o teste de Mann-Whitney pareado para variáveis que tiveram a hipótese de normalidade rejeitada. Foram calculadas as correlações entre o nível final de Vitamina D e o nível final de cada marcador. Para variáveis normais, foi aplicada a correlação de Pearson, e para variáveis não normais, a correlação não paramétrica de Spearman. Em todas as análises, foi adotada a  significância de 5%. As análises estatística foram feitas utilizando o software estatístico R, versão 3.2.2 (https://www.R-project.org).
 
 # Resultados
 
@@ -35,7 +35,7 @@ As estatísticas descritivas das variáveis analisadas estão sumarizadas na tab
 
 ![Boxplots da Vitamina D](../figuras/boxplots-vitaminad.png)
 
-Figura 1: Níveis basal e final da Vitamina D (boxplot: mediana, quartis, outliers)
+Figura 1: Níveis basal e final da Vitamina D (boxplot: mediana, quartis, outlier)
 
 ![Boxplots dos marcadores](../figuras/boxplots-marcadores.png)
 
@@ -57,7 +57,7 @@ Figura 4: Comparação entre os níveis basal e final dos marcadores ADP, CTX, F
 
 ## Normalidade
 
-Considerando conjuntamente os valores basal e final, nenhuma das variáveis parece ter distribuição normal. Deve-se rejeitar a hipótese de normalidade de **todas** as variáveis, e utilizar apenas métodos e testes não-paramétricos. Tabela 2.
+Considerando conjuntamente os valores basal e final, nenhuma das variáveis parece ter distribuição normal. Deve-se rejeitar a hipótese de normalidade de **todas** as variáveis, e utilizar apenas métodos e testes não paramétricos. Tabela 2.
 
 Variável | Normal? | p-valor
 ---| --- | ---
@@ -110,7 +110,7 @@ Tabela 4: Coeficientes de correlação de Spearman entre o nível final de Vitam
 
 ## Conclusões sintéticas
 
-A maior parte das correlações não foram significativas, no entanto os testes de diferença foram altamente significativos. Isso pdoe ser observado quando a correlação discorda da diferença. Por exemplo, FAO tem correlação marginalmente positiva (rho=0.03402), embora seu nível final tenha sido significativamente **menor** que o nível basal (p-valor=0.008773), o que pode ser observado na Figura 2.
+A maior parte das correlações não foram significativas, no entanto os testes de diferença foram altamente significativos. Isso pode ser observado quando a correlação discorda da diferença. Por exemplo, FAO tem correlação marginalmente positiva (rho=0.03402), embora seu nível final tenha sido significativamente **menor** que o nível basal (p-valor=0.008773), o que pode ser observado na Figura 2.
 
 Minha sugestão é evitar discutir os valores de correlação mas apenas apresentar os resultados, indicando que não são significativos.
 
