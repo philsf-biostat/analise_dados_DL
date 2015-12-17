@@ -20,9 +20,9 @@ Para baixar todos os resultados em um único arquivo ZIP, veja o(s) link(s) abai
 
 ## Relatório
 
-Todas as informações descritas abaixo estão sumarizadas no relatório.
+Todas as informações descritas abaixo estão sumarizadas no relatório. Este inclui uma sugestão de texto descrevendo a metodologia, e sugestões resumidas de descrição sintética dos resultados analisados.
 
-[Relatório][]
+- [Relatório][]
 
 [Relatório]: relatorio/analise_dados_DL.md
 
