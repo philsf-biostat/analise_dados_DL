@@ -10,6 +10,7 @@ cor(TNFALFA.BASAL,TNFALFA.FINAL) # TNFALFA
 
 ## Regressões: Final ~ Basal + Vitamina(??)
 # VITAMINA D
+png("../figuras/vitd-scatter.png")
 par(mfrow=c(1,1))
 
 fit.vit<-lm(VITAMINAD.FINAL~VITAMINAD.BASAL)
@@ -17,6 +18,9 @@ summary(fit.vit)
 plot(VITAMINAD.BASAL,VITAMINAD.FINAL)
 abline(fit.vit, lwd=2, col="blue")
 
+dev.off()
+
+png("../figuras/scatterplots.png")
 par(mfrow=c(2,3))
 
 # ADIPONECTINA
@@ -54,6 +58,8 @@ fit.tnf<-lm(TNFALFA.FINAL~TNFALFA.BASAL)
 summary(fit.tnf)
 plot(TNFALFA.BASAL,TNFALFA.FINAL)
 abline(fit.tnf, lwd=2, col="blue")
+
+dev.off()
 
 ## Busca de regressão múltipla
 # bigfit<-lm(CALCIO.FINAL ~ OPG.BASAL + OPG.FINAL + VITAMINA.D.FINAL + VITAMINA.D.BASAL + ADIPONECTINA.BASAL + ADIPONECTINA.FINAL + CTX.BASAL + CTX.FINAL + FAO.BASAL + FAO.FINAL + LEPTINA.BASAL + LEPTINA.FINAL + TNF.ALFA.BASAL + TNF.ALFA.FINAL)
