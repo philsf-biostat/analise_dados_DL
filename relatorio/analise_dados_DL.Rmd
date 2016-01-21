@@ -81,14 +81,10 @@ Tabela 3: Diferenças entre os valores basal e final dos marcadores ADP, CTX, FA
 
 Nenhuma das correlações entre Vitamina D e marcadores foi significativa com os dados analisados. Tabela 4
 
-Variável | rho | p-valor
---- | --- | --- | ---
-ADP | 0.116748 | 0.6143
-CTX | 0.01559961 | 0.9465
-FAO | 0.2670565 | 0.2419
-LEP | 0.1254896 | 0.5878
-OPG | 0.03174166 | 0.8914
-TNF | -0.00325947 | 0.9888
+```{r, results='asis', echo=FALSE}
+ct <- read.table("../resultados/cortest.dat")
+knitr::kable(ct)
+```
 
 Tabela 4: Coeficientes de correlação de Spearman entre o nível final de Vitamina D e o nível final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas).
 
