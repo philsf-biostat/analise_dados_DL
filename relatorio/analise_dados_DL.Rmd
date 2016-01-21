@@ -55,22 +55,10 @@ Figura 4: Comparação entre os níveis basal e final dos marcadores ADP, CTX, F
 
 Considerando conjuntamente os valores basal e final, nenhuma das variáveis parece ter distribuição normal. Deve-se rejeitar a hipótese de normalidade de **todas** as variáveis, e utilizar apenas métodos e testes não paramétricos. Tabela 2.
 
-Variável | Normal? | p-valor
----| --- | ---
-Vitamina D basal | x | 0.05342
-Vitamina D final | x | 0.6507
-ADP basal | x | 0.9775
-ADP final | x | 0.8827
-CTX basal | x | 0.7354
-CTX final | x | 0.16
-FAO basal | x | 0.2291
-FAO final | x | 0.8838
-LEP basal | x | 0.2637
-LEP final | x | 0.05006
-OPG basal | x | 0.0624
-OPG final | x | 0.3222
-TNF basal | x | 0.2568
-TNF final | x | 0.6046
+```{r, results='asis', echo=FALSE}
+np <- read.table("../resultados/norm.dat")
+knitr::kable(np)
+```
 
 Tabela 2: Testes de normalidade dos níveis basal e final da Vitamina D e dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (completar, siglas, etc). P-valores apresentados para o teste de Shapiro-Wilks.
 
