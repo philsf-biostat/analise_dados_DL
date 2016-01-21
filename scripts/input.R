@@ -19,3 +19,6 @@ margarida.long <- reshape(margarida, varying=c("ADIPONECTINA.BASAL", "ADIPONECTI
 
 attach(margarida.wide)
 attach(margarida.long)
+
+dados.num <- margarida.wide[c("VITAMINAD.BASAL","VITAMINAD.FINAL","ADIPONECTINA.BASAL","ADIPONECTINA.FINAL","CTX.BASAL","CTX.FINAL","FAO.BASAL","FAO.FINAL","LEPTINA.BASAL","LEPTINA.FINAL","OPG.BASAL","OPG.FINAL","TNFALFA.BASAL","TNFALFA.FINAL")]
+write.table(dados.num,file = "../dataset/dadosnum.dat")
