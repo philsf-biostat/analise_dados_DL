@@ -2,11 +2,13 @@
 dados.num <- read.table("../dataset/dadosnum.dat")
 n.fun <- function(x) c(shapiro.test(x)$p.value)
 np <- sapply(dados.num, n.fun)
-np <- round(np,digits = 4)
-np <- data.frame('p-valor' = np)
-names(np)<-"p-valor"
-write.table(np,file = "../resultados/norm.dat")
-rm(n.fun,np)
+
+vars <- attributes(np)$names
+attributes(np)$names <- seq(1,14)
+
+df <- data.frame(Variável=vars, 'p-valor' = np)
+write.table(df,file = "../resultados/norm.dat")
+rm(dados.num,n.fun,np,vars,df)
 
 ## Obsoletos ####
 # ## Teste de Shapiro-Wilk

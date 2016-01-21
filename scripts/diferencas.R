@@ -17,8 +17,8 @@ df[df$Variável == "OPG",]$p.valor <- wilcox.test(OPG.FINAL,OPG.BASAL, paired = 
 df[df$Variável == "TNFalfa",]$p.valor <- wilcox.test(TNFALFA.FINAL,TNFALFA.BASAL, paired = T, alternative = "l")$p.value
 
 write.table(df,file = "../resultados/diferencas.dat")
-rm(df,vars,desfecho)
-
+detach(dados.num)
+rm(dados.num,df,vars,desfecho)
 
 ## (curiosidade) Diferenças por medicamento? ####
 ## t.test(margarida$VITAMINAD.BASAL[Medicamento=="Aclasta"],margarida$VITAMINAD.BASAL[Medicamento=="Fosamax"])

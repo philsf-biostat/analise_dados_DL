@@ -1,13 +1,20 @@
 ## Correlações entre VitD e marcadores (ambos final) ####
 dados.num <- read.table("../dataset/dadosnum.dat")
+attach(dados.num)
 cor.fun <- function(x) c(cor.test(VITAMINAD.FINAL,x,method="spearman")$estimate,cor.test(VITAMINAD.FINAL,x,method="spearman")$p.value)
 ct <- vapply(dados.num, cor.fun,c("rho" = 0,"p-valor" = 0))
-ct <- round(ct, digits = 4)
 ct <- t(ct)
 ct<-ct[c("ADIPONECTINA.FINAL","CTX.FINAL","FAO.FINAL","LEPTINA.FINAL","OPG.FINAL","TNFALFA.FINAL"),]
+rownames(ct) <- seq(1,6)
 
-write.table(ct,file = "../resultados/cortest.dat")
-rm(ct,cor.fun)
+vars <- c("ADP","CTX","FAO","LEP","OPG","TNFalfa")
+rho <- ct[,"rho"]
+vals <- ct[,"p-valor"]
+df <- data.frame(Variável=vars, rho=rho,"p-valor"=vals)
+
+write.table(df,file = "../resultados/cortest.dat")
+detach(dados.num)
+rm(dados.num,ct,cor.fun,rho,vars,vals,df)
 
 ## Correlações entre valores basal e final ####
 cor.test(VITAMINAD.BASAL,VITAMINAD.FINAL,method="spearman") # Vitamina D
