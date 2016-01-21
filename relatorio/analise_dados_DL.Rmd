@@ -2,9 +2,16 @@
 title: "Relatório Análise de dados DL-2015"
 author: "Felipe Figueiredo"
 date: "January 21, 2016"
-output: 
+output:
+  md_document:
+    variant: markdown_github
   html_document:
-    toc: true
+    self_contained: no
+    toc: yes
+  pdf_document:
+    toc: yes
+  word_document:
+    fig_caption: yes
 ---
 # Metodologia utilizada
 
@@ -17,10 +24,26 @@ Foi aplicado o teste de normalidade de Shapiro-Wilks nas variáveis numéricas. 
 ## Estatísticas descritivas
 
 ### Estatísticas
+```{r, echo=FALSE}
+# library(knitr)
+
+```
+
+```{r, echo=FALSE}
+# set pander table-layout options
+library(pander)
+panderOptions('table.alignment.default', function(df)
+    ifelse(sapply(df, is.numeric), 'right', 'left'))
+panderOptions('table.split.table', Inf)
+# panderOptions('digits', 5)
+panderOptions('keep.trailing.zeros', TRUE)
+```
 
 ```{r, results='asis', echo=FALSE}
 desc.num <- read.table("../resultados/descritivas.dat")
-knitr::kable(desc.num)
+# kable(desc.num)
+# knitr::kable(desc.num)
+pander(desc.num)
 ```
 
 Tabela 1: Estatísticas descritivas da vitamina D e marcadores (siglas), em média (DP), mediana (AIQ).
@@ -57,7 +80,8 @@ Considerando conjuntamente os valores basal e final, nenhuma das variáveis pare
 
 ```{r, results='asis', echo=FALSE}
 np <- read.table("../resultados/norm.dat")
-knitr::kable(np)
+# knitr::kable(np,digits=5)
+pander(np)
 ```
 
 Tabela 2: Testes de normalidade dos níveis basal e final da Vitamina D e dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (completar, siglas, etc). P-valores apresentados para o teste de Shapiro-Wilks.
@@ -69,8 +93,9 @@ Todos os testes pareados indicaram aumento/diminuição altamente significativa 
 ```{r, results='asis', echo=FALSE}
 diferencas <- read.table("../resultados/diferencas.dat")
 # knitr::kable(diferencas)
-knitr::kable(diferencas,digits=5)
 # knitr::kable(diferencas, format.args=list(scientific=-2))
+# knitr::kable(diferencas,digits=5)
+pander(diferencas)
 ```
 
 Tabela 3: Diferenças entre os valores basal e final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas). P-valores apresentados de acordo com o teste de Mann-Whitney pareado.
@@ -81,7 +106,8 @@ Nenhuma das correlações entre Vitamina D e marcadores foi significativa com os
 
 ```{r, results='asis', echo=FALSE}
 ct <- read.table("../resultados/cortest.dat")
-knitr::kable(ct)
+# knitr::kable(ct,digits=5)
+pander(ct)
 ```
 
 Tabela 4: Coeficientes de correlação de Spearman entre o nível final de Vitamina D e o nível final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas).
