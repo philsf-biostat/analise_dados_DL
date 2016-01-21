@@ -10,22 +10,22 @@ Foi aplicado o teste de normalidade de Shapiro-Wilks nas variáveis numéricas. 
 
 ### Estatísticas
 
-Variável | Média (DP) | Mediana (AIQ)
----| --- | ---
-Vitamina D basal | x | x
-Vitamina D final | x | x
-ADP basal | x | x
-ADP final | x | x
-CTX basal | x | x
-CTX final | x | x
-FAO basal | x | x
-FAO final | x | x
-LEP basal | x | x
-LEP final | x | x
-OPG basal | x | x
-OPG final | x | x
-TNF basal | x | x
-TNF final | x | x
+|                   | Média|    DP| Mediana|   AIQ|
+|:------------------|-----:|-----:|-------:|-----:|
+|VITAMINAD.BASAL    | 13.41|  7.27|   11.00|  7.60|
+|VITAMINAD.FINAL    | 26.78| 10.87|   26.00|  8.30|
+|ADIPONECTINA.BASAL |  0.16|  0.05|    0.15|  0.07|
+|ADIPONECTINA.FINAL |  0.27|  0.09|    0.26|  0.12|
+|CTX.BASAL          |  0.31|  0.13|    0.31|  0.19|
+|CTX.FINAL          |  0.16|  0.06|    0.14|  0.08|
+|FAO.BASAL          | 30.23| 13.80|   33.50| 11.90|
+|FAO.FINAL          | 21.99|  8.95|   22.90| 12.00|
+|LEPTINA.BASAL      |  0.28|  0.04|    0.27|  0.07|
+|LEPTINA.FINAL      |  0.20|  0.08|    0.20|  0.15|
+|OPG.BASAL          |  2.68|  0.66|    2.70|  0.80|
+|OPG.FINAL          |  3.12|  0.56|    2.90|  0.70|
+|TNFALFA.BASAL      |  4.83|  1.06|    4.80|  1.20|
+|TNFALFA.FINAL      |  3.87|  0.87|    3.60|  1.30|
 
 Tabela 1: Estatísticas descritivas da vitamina D e marcadores (siglas), em média (DP), mediana (AIQ).
 
