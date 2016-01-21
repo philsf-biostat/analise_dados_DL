@@ -4,7 +4,7 @@ n.fun <- function(x) c(shapiro.test(x)$p.value)
 np <- sapply(dados.num, n.fun)
 np <- round(np,digits = 4)
 np <- data.frame('p-valor' = np)
-
+names(np)<-"p-valor"
 write.table(np,file = "../resultados/norm.dat")
 rm(n.fun,np)
 
