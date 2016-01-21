@@ -1,10 +1,10 @@
 ## Teste de Mann-Whitney pareado ####
 dados.num <- read.table("../dataset/dadosnum.dat")
 attach(dados.num)
-getOption("digits") # default = 7
-options(digits = 4)
+# getOption("digits") # default = 7
+# options(digits = 4)
 
-vars <- c("VITD","ADP","CTX","FAO","LEP","OPG","TNFalfa")
+vars <- c("VITD","ADP","CTX","FAO","LEP","OPG","TNF")
 desfecho <- c("aumentou","aumentou","diminuiu","diminuiu","diminuiu","aumentou","diminuiu")
 df <- data.frame(Variável=vars, Desfecho=desfecho,"p-valor"=seq(1,7))
 
@@ -14,7 +14,7 @@ df[df$Variável == "CTX",]$p.valor <- wilcox.test(CTX.FINAL,CTX.BASAL, paired = 
 df[df$Variável == "FAO",]$p.valor <- wilcox.test(FAO.FINAL,FAO.BASAL, paired = T, alternative = "l")$p.value
 df[df$Variável == "LEP",]$p.valor <- wilcox.test(LEPTINA.FINAL,LEPTINA.BASAL, paired = T, alternative = "l")$p.value
 df[df$Variável == "OPG",]$p.valor <- wilcox.test(OPG.FINAL,OPG.BASAL, paired = T, alternative = "g")$p.value
-df[df$Variável == "TNFalfa",]$p.valor <- wilcox.test(TNFALFA.FINAL,TNFALFA.BASAL, paired = T, alternative = "l")$p.value
+df[df$Variável == "TNF",]$p.valor <- wilcox.test(TNFALFA.FINAL,TNFALFA.BASAL, paired = T, alternative = "l")$p.value
 
 write.table(df,file = "../resultados/diferencas.dat")
 detach(dados.num)

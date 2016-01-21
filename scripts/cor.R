@@ -7,7 +7,7 @@ ct <- t(ct)
 ct<-ct[c("ADIPONECTINA.FINAL","CTX.FINAL","FAO.FINAL","LEPTINA.FINAL","OPG.FINAL","TNFALFA.FINAL"),]
 rownames(ct) <- seq(1,6)
 
-vars <- c("ADP","CTX","FAO","LEP","OPG","TNFalfa")
+vars <- c("ADP","CTX","FAO","LEP","OPG","TNF")
 rho <- ct[,"rho"]
 vals <- ct[,"p-valor"]
 df <- data.frame(Variável=vars, rho=rho,"p-valor"=vals)
