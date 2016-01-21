@@ -66,14 +66,12 @@ Tabela 2: Testes de normalidade dos níveis basal e final da Vitamina D e dos ma
 
 Todos os testes pareados indicaram aumento/diminuição altamente significativa entre o valor basal e final de cada variável. Tabela 3.
 
-Variável | Desfecho | p-valor
---- | --- | --- | ---
-ADP | aumentou | 3.683e-05
-CTX | diminuiu | 0.0004796
-FAO | diminuiu | 0.008773
-LEP | diminuiu | 0.0002087
-OPG | aumentou | 4.704e-05
-TNF | diminuiu | 0.0003489
+```{r, results='asis', echo=FALSE}
+diferencas <- read.table("../resultados/diferencas.dat")
+# knitr::kable(diferencas)
+knitr::kable(diferencas,digits=5)
+# knitr::kable(diferencas, format.args=list(scientific=-2))
+```
 
 Tabela 3: Diferenças entre os valores basal e final dos marcadores ADP, CTX, FAO, LEP, OPG e TNF (siglas). P-valores apresentados de acordo com o teste de Mann-Whitney pareado.
 
