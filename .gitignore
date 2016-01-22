@@ -114,4 +114,6 @@ sympy-plots-for-*.tex/
 
 ## Não monitorar materiais não próprios
 Misc/
+
+# RStudio files
 .Rproj.user
