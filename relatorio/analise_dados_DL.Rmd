@@ -3,11 +3,10 @@ title: "Relatório Análise de dados DL-2015"
 author: "Felipe Figueiredo"
 date: "January 21, 2016"
 output:
+  html_document:
+    toc: yes
   md_document:
     variant: markdown_github
-  html_document:
-    self_contained: no
-    toc: yes
   pdf_document:
     toc: yes
   word_document:
