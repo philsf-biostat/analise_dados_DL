@@ -3,11 +3,10 @@ title: "Relatório Análise de dados DL-2015"
 author: "Felipe Figueiredo"
 date: "January 21, 2016"
 output:
+  html_document:
+    toc: yes
   md_document:
     variant: markdown_github
-  html_document:
-    self_contained: no
-    toc: yes
   pdf_document:
     toc: yes
   word_document:
@@ -24,10 +23,6 @@ Foi aplicado o teste de normalidade de Shapiro-Wilks nas variáveis numéricas. 
 ## Estatísticas descritivas
 
 ### Estatísticas
-```{r, echo=FALSE}
-# library(knitr)
-
-```
 
 ```{r, echo=FALSE}
 # set pander table-layout options
@@ -35,6 +30,9 @@ library(pander)
 panderOptions('table.alignment.default', function(df)
     ifelse(sapply(df, is.numeric), 'right', 'left'))
 panderOptions('table.split.table', Inf)
+panderOptions('table.split.cells', Inf)
+# panderOptions('table.style', 'grid')
+# panderOptions('table.emphasize.rownames',FALSE)
 # panderOptions('digits', 5)
 panderOptions('keep.trailing.zeros', TRUE)
 ```
