@@ -24,10 +24,6 @@ Foi aplicado o teste de normalidade de Shapiro-Wilks nas variáveis numéricas. 
 ## Estatísticas descritivas
 
 ### Estatísticas
-```{r, echo=FALSE}
-# library(knitr)
-
-```
 
 ```{r, echo=FALSE}
 # set pander table-layout options
