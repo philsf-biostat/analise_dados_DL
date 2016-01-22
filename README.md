@@ -26,8 +26,10 @@ Para baixar todos os resultados em um único arquivo ZIP, veja o(s) link(s) abai
 Todas as informações descritas abaixo estão sumarizadas no relatório. Este inclui uma sugestão de texto descrevendo a metodologia, e sugestões resumidas de descrição sintética dos resultados analisados.
 
 - [Relatório][]
+- [Relatório (formato Word)][]
 
 [Relatório]: relatorio/analise_dados_DL.md
+[Relatório (formato Word)]: https://github.com/philsf-biostat/analise_dados_DL_2015/raw/master/relatorio/analise_dados_DL.docx
 
 ## Resultados brutos
 
