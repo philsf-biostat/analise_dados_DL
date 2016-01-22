@@ -31,6 +31,8 @@ panderOptions('table.alignment.default', function(df)
     ifelse(sapply(df, is.numeric), 'right', 'left'))
 panderOptions('table.split.table', Inf)
 panderOptions('table.split.cells', Inf)
+# panderOptions('table.style', 'grid')
+# panderOptions('table.emphasize.rownames',FALSE)
 # panderOptions('digits', 5)
 panderOptions('keep.trailing.zeros', TRUE)
 ```
