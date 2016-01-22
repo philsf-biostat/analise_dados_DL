@@ -29,34 +29,38 @@ Todas as informações descritas abaixo estão sumarizadas no relatório. Este i
 
 [Relatório]: relatorio/analise_dados_DL.md
 
-## Estatísticas descritivas
+## Resultados brutos
+
+Abaixo estão os resultados "brutos". A apresentação foi formatada no relatório acima.
+
+### Estatísticas descritivas
 
 Sumário das estatísticas descritivas das variáveis.
 
 * [descricao.txt][] ([download][download-desc-txt])
 
-[descricao.txt]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/resultados/descricoes.md
-[download-desc-txt]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/resultados/descricoes.txt
+[descricao.txt]: resultados/descricoes.md
+[download-desc-txt]: resultados/descricoes.txt
 
-## Teste de normalidade
+### Teste de normalidade
 
 p-valores do teste de normalidade entre os valores Basal e Final da Vitamina D e dos 6 marcadores escolhidos.
 
 * [normalidade.txt][] ([download][download-norm-txt])
 
-[normalidade.txt]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/resultados/normalidade.md
-[download-norm-txt]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/resultados/normalidade.txt
+[normalidade.txt]: resultados/normalidade.md
+[download-norm-txt]: resultados/normalidade.txt
 
-## Teste de diferenças
+### Teste de diferenças
 
 p-valores do teste de Mann-Whitney entre os valores Basal e Final da Vitamina D e dos 6 marcadores escolhidos.
 
 * [diferencas.txt][] ([download][download-diff-txt])
 
-[diferencas.txt]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/resultados/diferencas.md
-[download-diff-txt]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/resultados/diferencas.txt
+[diferencas.txt]: resultados/diferencas.md
+[download-diff-txt]: resultados/diferencas.txt
 
-## Figuras
+### Figuras
 
 Figuras descritivas das variáveis.
 
@@ -66,11 +70,11 @@ Figuras descritivas das variáveis.
 * [dispersão marcadores][] ([download][download-marc-scat])
 
 
-[boxplot Vitamina D]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/figuras/boxplots-vitaminad.png
-[download-vitd-bp]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/figuras/boxplots-vitaminad.png
-[boxplot marcadores]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/figuras/boxplots-marcadores.png
-[download-marc-bp]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/figuras/boxplots-marcadores.png
-[dispersão Vitamina D]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/figuras/scatterplots-vitaminad.png
-[download-vitd-scat]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/figuras/scatterplots-vitaminad.png
-[dispersão marcadores]: https://github.com/philsf-biostat/analise_dados_DL/blob/master/figuras/scatterplots-marcadores.png
-[download-marc-scat]: https://github.com/philsf-biostat/analise_dados_DL/raw/master/figuras/scatterplots-marcadores.png
+[boxplot Vitamina D]: figuras/boxplots-vitaminad.png
+[download-vitd-bp]: figuras/boxplots-vitaminad.png
+[boxplot marcadores]: figuras/boxplots-marcadores.png
+[download-marc-bp]: figuras/boxplots-marcadores.png
+[dispersão Vitamina D]: figuras/scatterplots-vitaminad.png
+[download-vitd-scat]: figuras/scatterplots-vitaminad.png
+[dispersão marcadores]: figuras/scatterplots-marcadores.png
+[download-marc-scat]: figuras/scatterplots-marcadores.png
